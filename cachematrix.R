@@ -22,6 +22,11 @@
 ## [,1] [,2]
 ## [1,]   -2  1.5
 ## [2,]    1 -0.5
+## > cacheSolve(xm)
+## getting cached data
+## [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
 
 ##
 ## This function creates a "matrix" which is really a list of functions.Each of these functions
@@ -45,8 +50,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ##
 ## This function caches the inverse of a matrix.  The specific matrix to be cached
-## is passed as a parameter and must be "made" using the makeCacheMatrix function above
-## It returns the cached inverse of the matrix passed as an argument (argument x)
+## is passed as a parameter (parameter x) and must be "made" using the makeCacheMatrix function above
+## It returns the cached inverse of the matrix. 
 ## 
 
 cacheSolve<- function(x, ...) {
